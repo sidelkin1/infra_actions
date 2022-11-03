@@ -1,1 +1,23 @@
+name: CI
 
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  
+  build:
+  
+    runs-on: ubuntu-latest
+  
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: one-line
+      run: echo Hello, world!
+    
+    - name: multi-line
+      run: |
+        echo line 1
+        echo line 2
