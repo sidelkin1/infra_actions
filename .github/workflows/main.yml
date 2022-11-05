@@ -64,4 +64,4 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/infra_actions@latest
-            sudo docker image ls
+            sudo docker image ls -a
